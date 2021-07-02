@@ -1,0 +1,35 @@
+package-lock.json 是工程的包依赖,工程打包时一般不会吧node_modules上传 所以靠这个文件找到依赖
+reportWebVitals--用来测试分析网页性能的
+ <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> %PUBLIC_URL%/ 指向public文件夹
+
+开启理想视口 一般用于手机端开发
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+配置浏览器地址栏的主题颜色 仅仅使用于手机浏览器  只支持原生的系统 而且时Android系统
+ <meta name="theme-color" content="#000000" />
+
+网站描述,主要为网络爬虫使用
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+IOS系统中网页添加到系统桌面的图标
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+应用加壳
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+爬虫协议数据
+robots.txt
+
+如果网页不支持JS脚本 就会显示这行文字
+<noscript>You need to enable JavaScript to run this app.</noscript>
+
+Obj.js
+export default {
+    a:1,
+    b:2
+} //默认暴露
+export const a = 1  //分别暴露
+
+使用的时候
+import obj,{a} from Obj
