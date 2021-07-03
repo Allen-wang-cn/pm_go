@@ -1,9 +1,12 @@
 import React from 'react'
+import Add from './components/Add/Add'
 
 export default class App extends React.Component{
     render(){
         return(
-            <div>Hello</div>
+            <div>
+                <Add/>
+            </div>
         )
     }
 }
